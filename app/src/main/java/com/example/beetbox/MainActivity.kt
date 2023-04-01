@@ -10,8 +10,11 @@ import com.example.beetbox.databinding.ActivityMainBinding
 import com.example.beetbox.databinding.ListItemSoundBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var beatBox:BeatBox
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        beatBox=BeatBox(assets)
+        beatBox.loadSounds()
         var binding:ActivityMainBinding=
             DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.recyclerView.apply {
