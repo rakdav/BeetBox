@@ -21,6 +21,10 @@ class BeatBox(private val assets:AssetManager) {
             soundPoll.play(it,1.0f,1.0f,1,0,1.0f)
         }
     }
+    fun release()
+    {
+        soundPoll.release()
+    }
     fun loadSounds():List<Sound>{
         val soundNames:Array<String>
         try

@@ -54,4 +54,9 @@ class MainActivity : AppCompatActivity() {
             holder.bind(sound)
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        beatBox.release()
+    }
 }
