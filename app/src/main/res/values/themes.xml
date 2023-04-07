@@ -16,4 +16,13 @@
     <style name="BeatBoxButton">
         <item name="android:background">@color/dark_blue</item>
     </style>
+    <style name="BeatBoxButton.Strong">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/dark_red</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="android:windowBackground">@color/soothing_blue</item>
+    </style>
 </resources>
