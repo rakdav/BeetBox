@@ -8,6 +8,7 @@
             type="com.example.beetbox.SoundViewModel" />
     </data>
     <Button
+        style="@style/BeatBoxButton"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         tools:text="Sound name"
